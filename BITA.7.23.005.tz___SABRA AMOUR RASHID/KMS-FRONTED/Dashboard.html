@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/mycss.css">
+     <link rel="stylesheet" href="bootstrap5\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\Untitled-1.css">
+    <link rel="stylesheet" href="font-awesome\kuku\css\font-awesome.min.css">
+</head>
+<body>
+     <div class="navbar  navbar-expand-lg bg-dark">
+    <div class="fluid-container justify-content-center">
+        <ul class="navbar-nav d-flex flex-row gap-4 ">
+            <li class="nav-item">
+                <a href="Dashboard.html" class="nav-link-active text-decoration-none text-white" >Library System</a>
+            </li>
+            <li class="nav-item">
+                <a href="Manage-users.html" class="nav-link text-white ">Manage Users</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Manage Books</a>
+            </li>      
+            <li class="nav-item">
+                <a href="Manage-Members.html" class="nav-link float-end text-white">Manage Members</a>
+            </li> 
+            <li class="nav-item">
+                <a href="Book-issuance.html" class="nav-link text-white">Book issuance</a>
+            </li>
+            <li class="nav-item">
+                <a href="Manage-Returns.html" class="nav-link text-white">Manage Returns</a>
+            </li>      
+            <li class="nav-item">
+                <a href="Manage-Returns.html" class="nav-link float-end text-white">reports</a>
+            </li> 
+            <li>
+             <span id="myId" class="dropdown">
+                        <A href="#" class="text-decoration-none text-white"  data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                        <div class="dropdown-menu" aria-labelledby="Account">
+                            <div class="dropdown-item">
+                                <a href="#" class="text-decoration-none">Change password</a></span>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="text-decoration-none">Change profile</a>
+                            </div>
+                            
+                            <div class="dropdown-item dropdown-footer">
+                                <a href="#" class="text-decoration-none">logout</a>
+                            </div>
+                        </div>
+                    </span>
+                </li>
+         </ul>
+         
+        </div>
+</div>
+        <div class="fluid-container">
+            <h4 class="text-center justify-content-center mt-3 mb-3" id="mydashboardh4">Welcome to the Library Management Dashboard</h4>
+        </div>
+      <div class="d-flex justify-content-center">
+          <div class="card bg-primary w-25 text-white">
+            <div class="card-body">
+                <div class="title">Total Books</div>
+                <div>1,250</div>
+            </div>
+        </div>
+          <div class="card bg-success w-25 text-white me-2 ms-2">
+            <div class="card-body">
+                <div class="title">Active Members</div>
+                <div>540</div>
+            </div>
+        </div>
+          <div class="card bg-warning w-25 text-white me-2 ms-2">
+            <div class="card-body">
+                <div class="title">Books issued</div>
+                <div>320</div>
+            </div>
+        </div>
+
+      </div>
+      <footer class="footer bg-black text-white mt-5 text-center justify-content-center">&COPY; 2025 Library Management System. All rights Reserved</footer>
+
+
+     <script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

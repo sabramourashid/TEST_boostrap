@@ -1,0 +1,22 @@
+#myform {
+    font-size: 3.5vw;
+}
+#plogin {
+    font-size: 3vw;
+    color: rgb(179, 170, 170);
+}
+#mydashboardh4 {
+    font-size: 2.5vw;
+}
+#addUser{
+    float:right;
+}
+#search{
+    float:right;
+}
+#mybutton{
+    float:right;
+}
+#myId {
+    float:right;
+}

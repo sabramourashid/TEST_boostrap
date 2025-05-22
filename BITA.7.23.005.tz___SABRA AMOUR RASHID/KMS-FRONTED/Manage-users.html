@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/mycss.css">
+     <link rel="stylesheet" href="bootstrap5\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\Untitled-1.css">
+    <link rel="stylesheet" href="font-awesome\kuku\css\font-awesome.min.css">
+</head>
+<body>
+     <div class="navbar  navbar-expand-lg bg-dark">
+    <div class="fluid-container justify-content-center">
+        <ul class="navbar-nav d-flex flex-row gap-4 ">
+            <li class="nav-item">
+                <a href="" class="nav-link-active text-decoration-none text-white" >Library System</a>
+            </li>
+            <li class="nav-item">
+                <a href="Manage-users.html" class="nav-link text-white ">Manage Users</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Manage Books</a>
+            </li>      
+            <li class="nav-item">
+                <a href="Manage-Members.html" class="nav-link float-end text-white">Manage Members</a>
+            </li> 
+            <li class="nav-item">
+                <a href="Book-issuance.html" class="nav-link text-white">Book issuance</a>
+            </li>
+            <li class="nav-item">
+                <a href="Manage-Returns.html" class="nav-link text-white">Manage Returns</a>
+            </li>      
+            <li class="nav-item">
+                <a href="Manage-Returns.html" class="nav-link float-end text-white">reports</a>
+            </li> 
+            <li class="nav-item">
+                <a href="#" class="nav-link float-end text-white">Account</a>
+            </li> 
+         </ul>
+         
+        </div>
+</div>
+<div class="container">
+
+  <div class=" d-flex flex-row ms-5 me-5">
+      <h2 class="text-left justify-content-left me-5">Manage Users</h2>
+  </div></h2>
+            <div class="p-1">
+                    <button id="btn1" type="button" class="btn btn-primary justify-content-right" data-bs-toggle="modal" data-bs-target="#mymodal" id="mybutton">+add new user</button><br>
+                    <div class="p-1 d-inline-flex">
+                        <label name="entry" id="entry">Show</l>
+                            <select name="entry" id="entries">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                            </select><span>entries</span>
+                    </div>
+                    <div id="search">
+                        Search<input type="search" name="search" placeholder="search">
+                    </div>
+                    <div class="table-responsive-md">
+                        <table class="table table-sm table-bordered">
+                            <thead class="bg-black">
+                                <tr class="secondary">
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>email</th>
+                                    <th>edit</th>
+                                    <th>delete</th>
+                                    <th>status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jane Doe</td>
+                                   <td>Admin</td>
+                                   <td>jane@example.com</td>
+                                    <td><button type="button" class="btn btn-info">Edit</button></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                    <td><button type="button" class="btn btn-warning">block</button></td>
+                                </tr>
+                                <tr>
+                                     <td>Jane Smith</td>
+                                   <td>Librarian</td>
+                                   <td>john@example.com</td>
+                                    <td><button type="button" class="btn btn-info">Edit</button></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                    <td><button type="button" class="btn btn-success">activate</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Marry jonson</td>
+                                   <td>Member</td>
+                                   <td>mary@example.com</td>
+                                    <td><button type="button" class="btn btn-info">Edit</button></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                    <td><button type="button" class="btn btn-warning">block</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal" id="mymodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header btn-light">
+                                    <h4 class="modal-title">Add New Student</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body justify-content-center">
+                                    <form bindsubmit="">
+                                            <div class="w-50 p-1">
+                                                <label for="" class="form-label">Full Name</label>
+                                                <input type="text" class="form-control" name="username">
+                                            </div>
+                                            
+                                       
+                                            <div class="w-50 p-1">
+                                                <label for="program" class="form-label">Role</label>
+                                                <select class="form-control"  id="userrole" >
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="member">member</option>
+                                                    <option value="user">user</option>
+                                                </select>
+                                            </div>
+                                            <div class="w-50 p-1">
+                                                <label for="" class="form-label">Email</label>
+                                                <input type="email" class="form-control" name="username">
+                                            </div>
+                                             <div class="w-50 p-1">
+                                                <label for="" class="form-label">Password</label>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                      
+                                        <div class="modal-footer mt-2">
+                                            <button type="submit" class="btn btn-primary float-end ms-3">Save User</button>
+                                            <button type="clear" class="btn btn-secondary float-end me-3">cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+</div>
+     <div class="fluid-container">
+         <footer class="footer bg-black text-white mt-5 text-center justify-content-center">&COPY; 2025 Library Management System. All rights Reserved</footer>
+
+     </div>
+
+     <script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
